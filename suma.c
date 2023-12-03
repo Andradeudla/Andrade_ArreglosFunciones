@@ -2,9 +2,22 @@
 #include <stdlib.h>
 #include <time.h>
 
+void sumamatrix(int fila, int columna, int matrixA[fila][columna], int matrixB[fila][columna], int matrixS[fila][columna]) // Definición de la función con void para que no devuelva ningun valor y para sumar matrices
+{
+    for (int i = 0; i < fila; i++)//realizamos el primer for para la matriz fila
+    {
+        for (int j = 0; j < columna; j++)//realizamos el segundo for para la matriz columna
+        {
+            matrixS[i][j] = matrixA[i][j] + matrixB[i][j];// sumamos los elementos correspondisntes a las matrices A y B, y se almacenan el resultado en la matriz S
+        }
+        
+    }
+    
+}
+
 int main() // la variable principal del programa de inicializacion
 {
-    printf("----------Bienvenido al Programa de Suma de Matrices---------- \n"); // se agrega un titulo para dar mejor presentacion
+    printf("----------Bienvenido al Programa de Suma de Matrices con Funciones---------- \n"); // se agrega un titulo para dar mejor presentacion
 
     int fila, columna;                                // se define las variables para filas y columnas
     printf("ingrese el valor para filas: "); // se solicita al usuario ingresar el numero de filas
