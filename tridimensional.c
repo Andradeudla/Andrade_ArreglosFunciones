@@ -37,6 +37,9 @@ int main()
     printf("Ingrese el numero de filas de las matrices: ");
     scanf("%d", &f);
 
+    int matriz[f][c];    // Declaramos la matriz con el tamaño especificado por el usuario//
 
+
+    crearMatrices(m, f, c, matriz);    // Llamamos a la función para crear las matrices
     return 0;
 }
