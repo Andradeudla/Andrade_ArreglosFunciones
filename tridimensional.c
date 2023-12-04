@@ -26,6 +26,17 @@ for (int j = 0; j < f; j++)
         printf("%d \t", matriz[j][k]); // Imprimimos el valor del elemento actual
     }
 }
+int main()
+{
+    
+    int m, f, c;
+    printf("Ingrese el numero de matrices que desea ingresar: "); // Solicitamos al usuario el número de matrices, filas y columnas//
+    scanf("%d", &m);
+    printf("Ingrese el numero de columnas de las matrices: ");
+    scanf("%d", &c);
+    printf("Ingrese el numero de filas de las matrices: ");
+    scanf("%d", &f);
+
 
     return 0;
 }
